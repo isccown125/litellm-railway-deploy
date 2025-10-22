@@ -8,7 +8,7 @@ RUN chmod 644 /app/config.yaml
 
 ENV LITELLM_CONFIG_PATH=/app/config.yaml
 
-EXPOSE 4000
+EXPOSE $PORT
 
 # Najprostsze - używa domyślnego entrypoint
 CMD ["--config", "/app/config.yaml"]
