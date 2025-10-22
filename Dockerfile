@@ -7,8 +7,6 @@ COPY config.yaml /app/config.yaml
 RUN chmod 644 /app/config.yaml
 
 ENV LITELLM_CONFIG_PATH=/app/config.yaml
+ENV UVICORN_HOST=0.0.0.0
 
-EXPOSE $PORT
-
-# Najprostsze - używa domyślnego entrypoint
-CMD ["--config", "/app/config.yaml"]
+CMD ["sh", "-c", "litellm --config /app/config.yaml --port ${PORT:-8080}"]
