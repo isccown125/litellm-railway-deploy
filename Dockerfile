@@ -10,4 +10,5 @@ ENV LITELLM_CONFIG_PATH=/app/config.yaml
 
 EXPOSE 4000
 
-CMD ["litellm", "--config", "/app/config.yaml", "--port", "4000", "--host", "0.0.0.0"]
+# Najprostsze - używa domyślnego entrypoint
+CMD ["--config", "/app/config.yaml"]
