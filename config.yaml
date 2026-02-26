@@ -24,7 +24,7 @@ model_list:
       model: gpt-5.1
       api_key: os.environ/OPENAI_API_KEY
 
-  - model_name: gpt-5.1-mini
+  - model_name: gpt-5-mini
     litellm_params:
       model: gpt-5.1-mini
       api_key: os.environ/OPENAI_API_KEY
