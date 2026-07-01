@@ -29,6 +29,11 @@ model_list:
       model: gpt-5-mini
       api_key: os.environ/OPENAI_API_KEY
 
+  - model_name: research-web
+    litellm_params:
+      model: openai/gpt-4o-search-preview
+      api_key: os.environ/OPENAI_API_KEY
+
   - model_name: claude-sonnet-4-6
     litellm_params:
       model: anthropic/claude-sonnet-4-6
