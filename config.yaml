@@ -33,6 +33,7 @@ model_list:
     litellm_params:
       model: openai/gpt-4o-search-preview
       api_key: os.environ/OPENAI_API_KEY
+      additional_drop_params: ["temperature"]
 
   - model_name: claude-sonnet-4-6
     litellm_params:
