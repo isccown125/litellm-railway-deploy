@@ -40,6 +40,23 @@ model_list:
       model: anthropic/claude-sonnet-4-6
       api_key: os.environ/ANTHROPIC_API_KEY
 
+  - model_name: claude-sonnet-5-5
+    litellm_params:
+      model: anthropic/claude-sonnet-5-5
+      api_key: os.environ/ANTHROPIC_API_KEY
+
+  - model_name: gpt-5.6-luna
+    litellm_params:
+      model: openai/gpt-5.6-luna
+      api_key: os.environ/OPENAI_API_KEY
+
+  - model_name: gpt-image-2.5-flare
+    litellm_params:
+      model: openai/gpt-image-2.5-flare
+      api_key: os.environ/OPENAI_API_KEY
+    model_info:
+      mode: image_generation
+
   - model_name: text-embedding-3-small
     litellm_params:
       model: text-embedding-3-small
