@@ -57,6 +57,11 @@ model_list:
     model_info:
       mode: image_generation
 
+  - model_name: elevenlabs-tts
+    litellm_params:
+      model: elevenlabs/eleven_v4_turbo
+      api_key: os.environ/ELEVENLABS_API_KEY
+
   - model_name: text-embedding-3-small
     litellm_params:
       model: text-embedding-3-small
