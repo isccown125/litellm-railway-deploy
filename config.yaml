@@ -71,9 +71,10 @@ model_list:
     litellm_params:
       model: text-embedding-3-large
       api_key: os.environ/OPENAI_API_KEY
-
+general_settings:
+  disable_env_credential_login: true
 litellm_settings:
   drop_params: true
   set_verbose: false
   cache: true
-  disable_env_credential_login: true
+
